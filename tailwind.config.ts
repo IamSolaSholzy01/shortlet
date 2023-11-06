@@ -17,6 +17,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        primary: "rgb(var(--color-primary) / <alpha-value>)", // #FF5626
+        lime: "rgb(var(--color-tertiary-lime) / <alpha-value>)", // #E0FFA9
+      }
     },
   },
   plugins: [],

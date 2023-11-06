@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-primary: 255 86 38; /* #ff5626 */
+  --color-tertiary-lime: 224 255 169; /* #E0FFA9 */
   font-size: 16px;
 }
 
@@ -14,6 +16,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --color-primary: 255 86 38; /* #ff5626 */
     font-size: 16px;
   }
 }
@@ -43,4 +46,17 @@ body {
 * {
   @apply font-sans;
   scroll-behavior: smooth;
+}
+
+a {
+  color: inherit !important
+}
+
+.ant-typography {
+  color: inherit !important;
+}
+
+h1.ant-typography {
+  color: inherit !important;
+  font-family: var(--font-serif) !important;
 }
