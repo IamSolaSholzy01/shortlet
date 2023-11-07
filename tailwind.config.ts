@@ -16,6 +16,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'home-hero': 'url("/home/home.png")',
+        'home-float': 'url("/home/home-float.png")',
       },
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)", // #FF5626

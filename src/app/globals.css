@@ -54,6 +54,7 @@ a {
 
 .ant-typography {
   color: inherit !important;
+  position: relative !important;
 }
 
 h1.ant-typography {

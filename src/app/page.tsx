@@ -1,9 +1,17 @@
-import Image from "next/image";
+import BestHomesSection from "./home/best.component";
+import CitiesHomeComponent from "./home/cities.component";
+import HassleHomeComponent from "./home/hassle.component";
+import HomeHeroSection from "./home/hero.component";
+import ShortletHomeComponent from "./home/shortlet.component";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-white">
-      <section>Hero Section</section>
-    </main>
+    <>
+      <HomeHeroSection />
+      <ShortletHomeComponent />
+      <HassleHomeComponent />
+      <CitiesHomeComponent />
+      <BestHomesSection />
+    </>
   );
 }

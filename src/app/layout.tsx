@@ -3,11 +3,10 @@ import { sans, serif } from "./fonts";
 import { clsx } from "clsx";
 import "@/app/globals.css";
 import StyledComponentsRegistry from "../lib/AntdRegistry";
-import { Button, ConfigProvider, Divider, Flex } from "antd";
+import Button from "@/components/button/button";
 import Logo from "@/assets/logo.component";
 import Link from "next/link";
-import theme from "@/theme/themeConfig";
-import { Typography } from "antd";
+import { Flex, Typography } from "antd";
 import Footer from "@/components/footer/footer";
 
 const { Title } = Typography;
@@ -35,7 +34,7 @@ export default function RootLayout({
               "py-10",
               "text-lime",
               "absolute",
-              "top-0",
+              "top-0 z-30",
               "bg-transparent"
             )}
           >
@@ -54,23 +53,23 @@ export default function RootLayout({
                 <Flex gap={16} align={"center"}>
                   <Link href="/faq">Sign in</Link>
                   <Link href="/contact">
-                    <button
-                      className={clsx(
+                    <Button
+                      type="primary"
+                      className={[
                         "bg-primary",
                         "px-5",
                         "py-3",
                         "rounded",
-                        "text-sm"
-                      )}
-                    >
-                      Get Started
-                    </button>
+                        "text-sm text-white",
+                      ]}
+                      text={"Get Started"}
+                    />
                   </Link>
                 </Flex>
               </div>
             </Flex>
           </header>
-          {children}
+          <main className="min-h-screen bg-white w-full">{children}</main>
           <Footer />
         </StyledComponentsRegistry>
       </body>
